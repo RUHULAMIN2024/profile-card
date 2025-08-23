@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap");
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: "Nunito", sans-serif;
+  }
+
+  :root {
+    --green: #58a497;
+    --yellow: #e09449;
+    --lightgreen1: #a4bdb7;
+    --brown: #8b4448;
+    --gray: gray;
+    --lightgreen2: rgb(164, 189, 183, 0.5);
+    --box: #ededed;
+  }
+
+
+
+.wp-block-pc-block-profile-card {
+ 
+
+  /* Content-1:Start */
+  .box {
+    margin: 0 auto;
+    box-shadow: 0px 0px 10px gray;
+  }
+
+  .box1 {
+    margin-top: 10px;
+  }
+
+  .content {
+    margin: 15px 2px;
+  }
+
+  .image img {
+    height: 120px;
+    width: 120px;
+object-fit: cover;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+  }
+
+  .level {
+    font-size: 0.7em;
+    width: fit-content;
+    border-radius: 5px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+
+    display: block;
+    margin: 0px auto 10px;
+  }
+
+  .name {
+    font-weight: bolder;
+    letter-spacing: 1px;
+  }
+
+  .job_title {
+    font-weight: bolder;
+    margin-top: -2px;
+  }
+
+  .job_description {
+    margin: 10px 30px 20px;
+  }
+
+
+
+  button {
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bolder;
+  }
+
+  .button {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    margin: 20px 30px 0px;
+  }
+
+  
+  .button .connect {
+    color: white;
+    border: none;
+  }
+  .button a {
+
+    text-decoration: none;
+  }
+
+  button.connect:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  button.message:hover {
+    letter-spacing: 1px;
+    transition: 0.5s;
+    background: rgba(88, 164, 151, 0.5);
+    cursor: pointer;
+  }
+  /* Content-1:End */
+
+  /* Responsiveness:Start */
+  @media screen and (max-width: 480px) {
+    .box {
+      width: 100vw;
+      border-radius: 0px;
+    }
+    .button {
+      display: flex;
+      flex-direction: column;
+    }
+    .button button {
+      width: 250px;
+    }
+    button.connect {
+      margin-top: 10px;
+    }
+  }
+  /* Responsiveness:End */
+}

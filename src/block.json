@@ -17,7 +17,7 @@
       "type": "object",
       "default": {
         "image": "https://i.postimg.cc/bryMmCQB/profile-image.jpg",
-        "level": "EXPERT",
+        "level": "PRO",
         "name": "Ethan Rivers",
         "jobTitle": "UI / UX Designer",
         "jobDescription": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam atque, ipsam a amet laboriosam eligendi.",
@@ -25,7 +25,6 @@
         "ConnectBtn": "Connect"
       }
     },
-
     "cardBg": {
       "type": "string",
       "default": "#ededed"
@@ -35,90 +34,149 @@
       "default": 350
     },
     "cardHeight": {
-      "type": "number",
-            "default": 420
-
+      "type": "number"
     },
-    "cardPadding":{
-      "type":"object",
-      "default":{    
-      "top": "10px",
-      "left": "10px",
-      "right":"10px" ,
-      "bottom":"10px" 
-  }
+    "cardPadding": {
+      "type": "object",
+      "default": {
+        "top": "10px",
+        "left": "10px",
+        "right": "10px",
+        "bottom": "10px"
+      }
     },
-	"cardBorder":{
-		"type":"object",
-		"default":{
-			"width": "1px",
-			"style": "solid",
-			"color": "#000000"
-		}
-	},
-
-	"containerBorderRadius":{
-		"type":"string",
-		"default": "20px"
-	},
-	"imageBorder":{
-		"type":"object",
-		"default":{
-			"width": "1px",
-			"style": "solid",
-			"color": "#000000"
-		}
-	},
-	"imageBorderRadius":{
-		"type":"string",
-		"default": "50%"
-	},
-	"messageBtnBorder":{
-		"type":"object",
-		"default":{
-			"width": "2px",
-			"style": "solid",
-			"color": "#000000"
-		}
-	},
-	"messageBtnBorderRadius":{
-		"type":"string",
-		"default": "2px"
-	},
-	"connectBtnBorder":{
-		"type":"object",
-		"default":{
-			"width": "1px",
-			"style": "solid",
-			"color": "#000000"
-		}
-	},
-	"connectBtnBorderRadius":{
-		"type":"string",
-		"default": "2px"
-	},
-
-    "levelBg": { "type": "string", "default": "#a4bdb780" },
-   "levelPadding":{
-      "type":"object",
-      "default":{    
-      "top": "5px",
-      "left": "10px",
-      "right":"10px" ,
-      "bottom":"5px" 
-  }
+    "cardBorder": {
+      "type": "object",
+      "default": {
+        "width": "0px",
+        "style": "solid",
+        "color": "#000000"
+      }
     },
-    "nameColor": { "type": "string", "default": "" },
-    "nameSize": { "type": "string", "default": "1.25em" },
-    "jobTitleColor": { "type": "string", "default": "gray" },
-    "jobTitleSize": { "type": "string", "default": "0.65em" },
-    "jobDescriptionColor": { "type": "string", "default": "gray" },
-    "jobDescriptionSize": { "type": "string", "default": "0.7em" },
-
-    "messageBtnBg": { "type": "string", "default": "#ededed" },
-    "connectBtnBg": { "type": "string", "default": "#000" },
-
-
+    "containerBorderRadius": {
+      "type": "string",
+      "default": "20px"
+    },
+    "imageBorder": {
+      "type": "object",
+      "default": {
+        "width": "0px",
+        "style": "solid",
+        "color": "#000000"
+      }
+    },
+    "imageBorderRadius": {
+      "type": "string",
+      "default": "50%"
+    },
+    "messageBtnBorder": {
+      "type": "object",
+      "default": {
+        "width": "2px",
+        "style": "solid",
+        "color": "#000000"
+      }
+    },
+    "messageBtnBorderRadius": {
+      "type": "string",
+      "default": "10px"
+    },
+    "connectBtnBorder": {
+      "type": "object",
+      "default": {
+        "width": "1px",
+        "style": "solid",
+        "color": "#000000"
+      }
+    },
+    "connectBtnBorderRadius": {
+      "type": "string",
+      "default": "10px"
+    },
+    "levelColors": {
+      "type": "object",
+      "default": {
+        "color": "",
+        "bgType": "",
+        "bg": "",
+        "gradient": ""
+      }
+    },
+    "levelPadding": {
+      "type": "object",
+      "default": {
+        "top": "2px",
+        "left": "10px",
+        "right": "10px",
+        "bottom": "2px"
+      }
+    },
+    "nameColor": {
+      "type": "string",
+      "default": ""
+    },
+    "nameTypography": {
+      "type": "object",
+      "default": {
+        "fontCategory": "",
+        "fontFamily": "",
+        "fontSize": { "desktop": 0, "tablet": 0, "mobile": 0 },
+        "fontStyle": "",
+        "fontVariant": "",
+        "fontWeight": "",
+        "letterSpace": "",
+        "lineHeight": "",
+        "textDecoration": "",
+        "textTransform": ""
+      }
+    },
+    "jobTitleColor": {
+      "type": "string",
+      "default": "gray"
+    },
+    "jobTitleTypography": {
+      "type": "object",
+      "default": {
+        "fontCategory": "",
+        "fontFamily": "",
+        "fontSize": { "desktop": 0, "tablet": 0, "mobile": 0 },
+        "fontStyle": "",
+        "fontVariant": "",
+        "fontWeight": "",
+        "letterSpace": "",
+        "lineHeight": "",
+        "textDecoration": "",
+        "textTransform": ""
+      }
+    },
+    "jobDescriptionColor": {
+      "type": "string",
+      "default": "gray"
+    },
+    
+     "jobDescriptionTypography": {
+      "type": "object",
+      "default": {
+        "fontCategory": "",
+        "fontFamily": "",
+        "fontSize": { "desktop": 0, "tablet": 0, "mobile": 0 },
+        "fontStyle": "",
+        "fontVariant": "",
+        "fontWeight": "",
+        "letterSpace": "",
+        "lineHeight": "",
+        "textDecoration": "",
+        "textTransform": ""
+      }
+    },
+    "messageBtnBg": {
+      "type": "string",
+      "default": "#ededed"
+    },
+    "connectBtnBg": {
+      "type": "string",
+      "default": "#000"
+    },
     "openInNewTab": {
       "type": "boolean",
       "default": false
@@ -127,9 +185,7 @@
   "supports": {
     "align": ["wide", "full"],
     "html": false
-	
   },
- 
   "editorScript": "file:./index.js",
   "editorStyle": "file:./index.css",
   "style": "file:./view.css",

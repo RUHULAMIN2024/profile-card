@@ -29,9 +29,9 @@ const General = ({ attributes, setAttributes }) => {
           label={__("Select Level", "pc-block")}
           value={level}
           options={[
-            { label: "EXPERT", value: "EXPERT" },
-            { label: "INTERMEDIATE", value: "INTERMEDIATE" },
             { label: "BASIC", value: "BASIC" },
+            { label: "PRO", value: "PRO" },
+            { label: "ENTERPRISE", value: "ENTERPRISE" },
           ]}
           onChange={(value) => {
             setAttributes({ card: { ...card, level: value } });

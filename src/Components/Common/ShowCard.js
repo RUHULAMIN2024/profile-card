@@ -33,6 +33,8 @@ export default function ShowCard({
           ) : (
             <FrontendUI attributes={attributes} />
           )}
+
+          
           <div className="button">
             <div>
               <Tooltip text="Click to open Modal">

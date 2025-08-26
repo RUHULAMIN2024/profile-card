@@ -35,7 +35,7 @@
       "default": 350
     },
     "cardHeight": {
-      "type": "number",
+      "type": "number"
 
     },
     "cardPadding":{

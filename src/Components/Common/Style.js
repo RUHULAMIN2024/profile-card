@@ -1,5 +1,3 @@
-import { getColorsCSS, getTypoCSS } from "../../../../bpl-tools/utils/getCSS";
-
 const Style = ({ attributes, id }) => {
   const {
     alignment,
@@ -11,14 +9,14 @@ const Style = ({ attributes, id }) => {
     containerBorderRadius,
     imageBorder,
     imageBorderRadius,
-    levelColors,
+    levelBg,
     levelPadding,
     nameColor,
-    nameTypography,
+    nameSize,
     jobTitleColor,
-    jobTitleTypography,
+    jobTitleSize,
     jobDescriptionColor,
-    jobDescriptionTypography,
+    jobDescriptionSize,
     messageBtnBorder,
     messageBtnBg,
     messageBtnBorderRadius,
@@ -28,24 +26,12 @@ const Style = ({ attributes, id }) => {
   } = attributes;
   const mainSl = `#${id}`;
   const blockSl = `${mainSl} .box`;
+  console.log(cardPadding);
 
   return (
     <style
       dangerouslySetInnerHTML={{
         __html: `
-
-
-
-
-${getTypoCSS(`${blockSl} .name`, nameTypography)?.googleFontLink}
-${getTypoCSS(`${blockSl} .name`, nameTypography)?.styles}
-
-${getTypoCSS(`${blockSl} .job_title`, jobTitleTypography)?.googleFontLink}
-${getTypoCSS(`${blockSl} .job_title`, jobTitleTypography)?.styles}
-
-${getTypoCSS(`${blockSl} .job_description`, jobDescriptionTypography)?.googleFontLink}
-${getTypoCSS(`${blockSl} .job_description`, jobDescriptionTypography)?.styles}
-
 		
 
 	${blockSl}{
@@ -54,54 +40,41 @@ ${getTypoCSS(`${blockSl} .job_description`, jobDescriptionTypography)?.styles}
     height: ${cardHeight}px;
     text-align: ${alignment};
 		border: ${cardBorder?.width} ${cardBorder?.style} ${cardBorder?.color};
-		padding: ${cardPadding?.top} ${cardPadding?.right} ${cardPadding?.bottom} ${
-      cardPadding?.left
-    };
+		padding: ${cardPadding?.top} ${cardPadding?.right} ${cardPadding?.bottom} ${cardPadding?.left};
     	border-radius: ${containerBorderRadius};
 	}
 	${blockSl} .image img{
-    height: 120px;
-    width: 120px;
-    object-fit: cover;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5px;
 		border: ${imageBorder?.width} ${imageBorder?.style} ${imageBorder?.color};
-    border-radius: ${imageBorderRadius};
+    	border-radius: ${imageBorderRadius};
 
 	}
 	${blockSl} .level{
-    ${getColorsCSS(levelColors)}
-		padding: ${levelPadding?.top} ${levelPadding?.right} ${levelPadding?.bottom} ${
-      levelPadding?.left
-    };
+		background: ${levelBg};
+		padding: ${levelPadding?.top} ${levelPadding?.right} ${levelPadding?.bottom} ${levelPadding?.left};
 
 	}
 	${blockSl} .name{
-	  color: ${nameColor};
+		color: ${nameColor};
+    font-size: ${nameSize};
 
 	}
 	${blockSl} .job_title{
 		color: ${jobTitleColor};
+    font-size: ${jobTitleSize};
 	}
 	${blockSl} .job_description{
 		color: ${jobDescriptionColor};
+    font-size: ${jobDescriptionSize};
 	}
-
 	${blockSl} .button .message {
 		background: ${messageBtnBg};
-		border: ${messageBtnBorder?.width} ${messageBtnBorder?.style} ${
-      messageBtnBorder?.color
-    };
+		border: ${messageBtnBorder?.width} ${messageBtnBorder?.style} ${messageBtnBorder?.color};
 		border-radius: ${messageBtnBorderRadius};
 
   	}
 	${blockSl} .button .connect {
 		background: ${connectBtnBg};
-		border: ${connectBtnBorder?.width} ${connectBtnBorder?.style} ${
-      connectBtnBorder?.color
-    };
+		border: ${connectBtnBorder?.width} ${connectBtnBorder?.style} ${connectBtnBorder?.color};
 		    	border-radius: ${connectBtnBorderRadius};
 
   	}
